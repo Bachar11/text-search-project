@@ -33,7 +33,7 @@ npm install -g @angular/cli
 Follow these steps to run the Angular app locally:
 
 1. **Clone this repository**
-   ```bash
+   
 git clone https://github.com/Bachar11/text-search-project.git
 Navigate into the project folder
 
