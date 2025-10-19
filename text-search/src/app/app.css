@@ -1,0 +1,175 @@
+:host { display:block; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+header h1 { margin: 12px 0 16px; }
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+input:focus { border-color:#2563eb; box-shadow:0 0 0 3px rgba(37,99,235,.12); }
+.count { color:#6b7280; margin: 10px 0 16px; }
+mark { background:#fff59d; padding:0 2px; }
+hr { border:0; border-top:1px solid #eee; }
+
+
+.search-page {
+  background: #fff;
+  padding: 2rem 0;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+}
+
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  min-height: 600px;
+   height: auto;  
+}
+
+
+.search-content {
+  flex: 2;
+}
+
+.search-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.search-box input {
+  width: 80%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #111;
+}
+
+.result-count {
+  color: #000;
+  margin: 1rem 0 1.5rem;
+}
+
+
+.article {
+  margin-bottom: 1.5rem;
+}
+
+.article h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.article .date {
+  font-style: italic;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.article p {
+  line-height: 1.5;
+  color: #000;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #eee;
+  margin-top: 1rem;
+}
+
+mark {
+  background: #ffeb3b;
+  font-weight: 600;
+}
+
+.sidebar {
+  flex: 1;
+  max-width: 400px;
+  position: sticky;
+  top: 20px;
+min-height: 600px; 
+
+}
+
+.profile-box {
+  background: #f8fafc;
+  border: 1px solid #ddd;
+  padding: 14px;
+  border-radius: 4px;
+  font-size: 0.87.5rem;
+  line-height: 1.5;
+  color: #000;
+min-height: 180px;
+  box-sizing: border-box;
+}
+
+.profile-box strong {
+  font-weight: 700;
+}
+
+.profile-box .author-link {
+  color: #000;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: #999;
+}
+
+.profile-box .author-link:hover {
+  color: #0077b5;
+  text-decoration-color: #0077b5;
+}
+
+.twitter-follow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.twitter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #1da1f2;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.twitter-btn:hover {
+  background: #0d8ae8;
+}
+
+.twitter-btn svg {
+  width: 13px;
+  height: 13px;
+}
+
+.followers {
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  color: #444;
+  background: #ffff;
+}

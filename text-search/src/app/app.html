@@ -1,0 +1,46 @@
+  <div class="search-page">
+  <div class="search-container">
+    <!-- LEFT SIDE -->
+    <div class="search-content">
+      <h1>Search</h1>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search articles..." [(ngModel)]="searchText" aria-label="Search"/>
+      </div>
+
+      <p class="result-count">
+        <strong>{{ filtered().length }}</strong>
+        {{ filtered().length === 1 ? 'post' : 'posts' }} were found.
+      </p>
+
+      <div *ngFor="let article of filtered()" class="article">
+        <h2 [innerHTML]="article.title | highlighter: searchText"></h2>
+        <p class="date">{{ article.date }}</p>
+        <p [innerHTML]="article.summary | highlighter: searchText"></p>
+        <hr />
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+<aside class="sidebar">
+  <div class="profile-box">
+    <p>
+      <strong>bitsofcode.</strong> Articles on Frontend Development. All articles are written by
+      <a href="#" class="author-link">Ire Aderinokun</a>, Frontend Developer and User Interface Designer.
+    </p>
+
+    <div class="twitter-follow">
+      <a href="https://twitter.com/ireaderinokun" target="_blank" class="twitter-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewBox="0 0 24 24">
+          <path
+            d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.93 4.93 0 0 0 2.165-2.724 9.868 9.868 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616 3c-2.736 0-4.952 2.216-4.952 4.952 0 .388.044.765.128 1.128C7.728 8.85 4.1 6.885 1.67 3.905a4.932 4.932 0 0 0-.67 2.488c0 1.716.874 3.234 2.201 4.123a4.903 4.903 0 0 1-2.245-.621v.063c0 2.396 1.705 4.396 3.965 4.85a4.902 4.902 0 0 1-2.237.085c.63 1.965 2.445 3.392 4.6 3.435A9.867 9.867 0 0 1 0 19.54a13.945 13.945 0 0 0 7.548 2.212c9.058 0 14.01-7.514 14.01-14.03 0-.213-.004-.426-.014-.637A10.004 10.004 0 0 0 24 4.557z"
+          />
+        </svg>
+        Follow @ireaderinokun
+      </a>
+      <span class="followers">19.1K followers</span>
+     </div>
+ </div>
+</aside>
+  </div>
+  </div>
