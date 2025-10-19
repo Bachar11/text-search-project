@@ -26,3 +26,25 @@ To install Angular CLI, run:
 
 ```bash
 npm install -g @angular/cli
+
+
+## ▶️ How to Run the Application
+
+Follow these steps to run the Angular app locally:
+
+1. **Clone this repository**
+   ```bash
+git clone https://github.com/Bachar11/text-search-project.git
+Navigate into the project folder
+
+cd text-search-project
+Install dependencies
+
+
+npm install
+Run the development server
+
+
+ng serve
+Open in browser
+Go to 👉 http://localhost:4200
